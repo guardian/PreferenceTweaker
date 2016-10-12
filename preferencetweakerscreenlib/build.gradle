@@ -60,12 +60,12 @@ install {
         pom.project {
             name 'PreferenceTweaker'
             description 'Add a settings screen to change any value in SharedPreferences'
-            url 'https://github.com/guardian/piper'
+            url 'https://github.com/guardian/PreferenceTweaker'
             inceptionYear '2016'
 
             packaging 'aar'
             groupId 'com.gu.android'
-            artifactId 'piper'
+            artifactId 'PreferenceTweaker'
             version '0.1'
 
             licenses {
@@ -76,13 +76,13 @@ install {
             }
             scm {
                 connection 'https://github.com/guardian/PreferenceTweaker.git'
-                url 'https://github.com/guardian/piper'
+                url 'https://github.com/guardian/PreferenceTweaker'
 
             }
             developers {
                 developer {
-                    id = 'maxspencer'
-                    name 'Max Spencer'
+                    id = 'chrisowen101'
+                    name 'Chris Owen'
                 }
             }
         }
@@ -98,16 +98,16 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = 'android'
-        name = 'piper'
+        name = 'PreferenceTweaker'
         userOrg = 'guardian'
         licenses = ['MIT']
-        vcsUrl = 'https://github.com/guardian/piper.git'
+        vcsUrl = 'https://github.com/guardian/PreferenceTweaker.git'
         publish = true
         version {
-            name = '0.1.2'
-            desc = 'Piper 0.1.2'
+            name = '0.1'
+            desc = 'PreferenceTweaker 0.1'
             released = new Date()
-            vcsTag = 'v0.1.2'
+            vcsTag = 'v0.1'
         }
     }
 }
